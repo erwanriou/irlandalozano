@@ -1,0 +1,26 @@
+{
+  "name": "irlandalozano",
+  "version": "1.0.0",
+  "description": "ppayaz website",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "start:server": "nodemon index.js",
+    "start:client": "npm start --prefix client",
+    "dev": "run-p --race start:server start:client",
+    "heroku-postbuild": "sh ./scripts/deploy.sh"
+  },
+  "author": "isela alarcon && erwan riou",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "1.19.0",
+    "compression": "1.7.4",
+    "cookie-parser": "1.4.5",
+    "express": "4.17.1",
+    "mongoose": "5.12.12",
+    "npm-run-all": "4.1.5"
+  },
+  "devDependencies": {
+    "nodemon": "2.0.7"
+  }
+}
