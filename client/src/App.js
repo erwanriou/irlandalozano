@@ -1,7 +1,14 @@
 import React from "react"
 
+//IMPORT COMPONENTS
+import Main from "@components/layout/main/Main"
+
 const App = () => {
-  return <div>hello world</div>
+  return (
+    <>
+      <Main />
+    </>
+  )
 }
 
 export default App
