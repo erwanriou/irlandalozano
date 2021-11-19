@@ -3,11 +3,11 @@ import styled from "styled-components"
 export const LogoStyle = styled.img`
   position: absolute;
   z-index: 1;
-  top: calc(50% - 100px);
-  right: calc(50% - 100px);
+  top: calc(50% - 90px);
+  right: calc(50% - 90px);
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 200px;
-  height: 200px;
+  width: 180px;
+  height: 180px;
 `
