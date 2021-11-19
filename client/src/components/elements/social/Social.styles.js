@@ -7,7 +7,7 @@ export const Contact = styled.div`
   justify-content: center;
   width: 10px;
   color: white;
-  top: 65%;
+  top: 60%;
 `
 export const ImgStyle = styled.img`
   display: flex;
@@ -17,4 +17,5 @@ export const ImgStyle = styled.img`
   font-family: "Material Icons";
   width: 30px;
   margin-right: 20px;
+  cursor: pointer;
 `
