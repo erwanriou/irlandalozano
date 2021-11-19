@@ -17,9 +17,10 @@ export const MainImg = styled.img`
 export const Text = styled.div`
   position: absolute;
   display: flex;
-  top: 50%;
-
+  top: 55%;
   font-size: 20px;
   color: white;
   font-family: montserrat;
+  font-weight: bold;
+  letter-spacing: 5px;
 `
