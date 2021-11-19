@@ -7,7 +7,7 @@ export const Contact = styled.div`
   justify-content: center;
   width: 10px;
   color: white;
-  top: 60%;
+  top: 70%;
 `
 export const ImgStyle = styled.img`
   display: flex;
@@ -18,4 +18,7 @@ export const ImgStyle = styled.img`
   width: 30px;
   margin-right: 20px;
   cursor: pointer;
+  &:hover {
+    filter: invert(65%) sepia(30%) saturate(7170%) hue-rotate(81deg) brightness(118%) contrast(127%);
+  }
 `
