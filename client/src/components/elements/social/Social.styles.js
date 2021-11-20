@@ -16,8 +16,10 @@ export const ImgStyle = styled.img`
   color: #b785eb;
   font-family: "Material Icons";
   width: 25px;
-  margin-right: 20px;
   cursor: pointer;
+  &:first-of-type {
+    margin-right: 20px;
+  }
   &:hover {
     filter: invert(61%) sepia(33%) saturate(7002%) hue-rotate(89deg) brightness(140%) contrast(130%);
   }
