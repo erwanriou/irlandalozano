@@ -15,7 +15,7 @@ export const ImgStyle = styled.img`
   align-items: center;
   color: #b785eb;
   font-family: "Material Icons";
-  width: 30px;
+  width: 25px;
   margin-right: 20px;
   cursor: pointer;
   &:hover {

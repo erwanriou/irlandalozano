@@ -19,7 +19,7 @@ export const Text = styled.div`
   position: absolute;
   display: flex;
   top: 50%;
-  font-size: 40px;
+  font-size: 50px;
   color: white;
   font-family: montserrat;
   font-weight: bold;
