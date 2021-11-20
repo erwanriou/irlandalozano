@@ -19,6 +19,6 @@ export const ImgStyle = styled.img`
   margin-right: 20px;
   cursor: pointer;
   &:hover {
-    filter: invert(65%) sepia(30%) saturate(7170%) hue-rotate(81deg) brightness(118%) contrast(127%);
+    filter: invert(61%) sepia(33%) saturate(7002%) hue-rotate(89deg) brightness(140%) contrast(130%);
   }
 `
