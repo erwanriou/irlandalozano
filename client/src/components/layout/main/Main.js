@@ -5,12 +5,12 @@ import Logo from "../../elements/logo/Logo"
 import Social from "../../elements/social/Social"
 
 //IMPORT STYLES
-import { MainImg, MainContainer, Text, Copyright } from "./Main.styles"
+import { MainBackground, MainContainer, Text, Copyright } from "./Main.styles"
 
 const Main = () => {
   return (
     <MainContainer>
-      <MainImg src="https://ik.imagekit.io/bypiuaav6q8/IRLANDA_LOZANO_STUDIO/it_1h2d1cdwe.png?updatedAt=1637339661982" />
+      <MainBackground />
       <Logo />
       <Text>
         <p>COMING SOON</p>

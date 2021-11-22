@@ -10,13 +10,11 @@ export const MainContainer = styled.main`
   height: 100vh;
   overflow: hidden;
 `
-export const MainImg = styled.img`
+export const MainBackground = styled.div`
   position: absolute;
+  background-color: black;
   width: 100%;
-  @media only screen and (max-width: 1000px) {
-    width: auto;
-    height: 100%;
-  }
+  height: 100%;
 `
 
 export const Text = styled.div`
