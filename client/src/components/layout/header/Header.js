@@ -1,5 +1,9 @@
 import React from "react"
 
+// REDUX
+import { useSelector } from "react-redux"
+import { getTranslate } from "r1-localize"
+
 // IMPORT STYLING
 import { HeaderWrapper, HeaderContainer, HeaderNav, HeaderLink } from "./Header.styles"
 
@@ -10,8 +14,11 @@ import Logo from "@components/elements/logo/Logo"
 import { links } from "@data/links"
 
 const Header = () => {
+  // HOOKS
+  const translate = useSelector(state => getTranslate(state.localize))
+
   // RENDER FUNCTIONS
-  const renderLinks = () => links.map(link => <HeaderLink href={link.href}>{link.translation}</HeaderLink>)
+  const renderLinks = () => links.map((link, i) => <HeaderLink href={link.href}>{translate(`header.nav.${i + 1}`)}</HeaderLink>)
 
   // MAIN RENDER
   return (

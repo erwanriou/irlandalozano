@@ -1,5 +1,7 @@
 import React from "react"
 
+import { withLocalize } from "r1-localize"
+
 //IMPORT COMPONENTS
 import Header from "@components/layout/header/Header"
 import Banner from "@components/layout/banner/Banner"
@@ -20,4 +22,4 @@ const App = () => {
   )
 }
 
-export default App
+export default withLocalize(App)
