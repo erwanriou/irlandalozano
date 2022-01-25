@@ -1,7 +1,12 @@
 import styled from "styled-components"
+import { colors } from "@styles/contants"
 
-export const LogoStyle = styled.img`
+export const LogoStyle = styled.svg`
   position: relative;
-  width: 80px;
-  height: 80px;
+  .green {
+    fill: ${colors.green};
+  }
+  .white {
+    fill: ${colors.white};
+  }
 `

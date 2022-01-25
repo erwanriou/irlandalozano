@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect } from "react"
 
 import { withLocalize } from "r1-localize"
 
@@ -11,10 +11,18 @@ import Footer from "@components/layout/footer/Footer"
 //IMPORT STYLES
 import "../styles/reset.css"
 
-const App = () => {
+// IMPORT UTILS
+import { activateTranslations } from "@utils"
+
+const App = ({ languages, setActiveLanguage, addTranslationForLanguage }) => {
+  // USE ONCE
+  useEffect(() => {
+    activateTranslations(addTranslationForLanguage)
+  }, []) // eslint-disable-line
+
   return (
     <>
-      <Header />
+      <Header languages={languages} setActiveLanguage={setActiveLanguage} />
       <Banner />
       <Main />
       <Footer />

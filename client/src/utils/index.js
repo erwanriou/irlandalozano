@@ -11,10 +11,12 @@ const languages = [
   {
     name: "es-MX",
     code: "es",
-    translation: EN
+    translation: ES
   }
 ]
 
+export const imageBuilder = path => `https://ik.imagekit.io/bypiuaav6q8${path}`
+export const activateTranslations = addtranslate => languages.map(({ translation, code }) => addtranslate(translation, code))
 export const initialize = () => ({
   languages: languages.map(({ name, code }) => ({ name, code })),
   translation: EN,
