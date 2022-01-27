@@ -12,7 +12,6 @@ export const HeaderWrapper = styled.header`
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    top: unset;
     height: 50px;
     width: calc(100% - 30px);
     &:first-of-type {

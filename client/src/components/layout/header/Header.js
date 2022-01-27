@@ -21,7 +21,6 @@ const Header = ({ languages, setActiveLanguage }) => {
   // HOOKS
   const node = useRef()
   const [toggle, setToggle] = useState(false)
-  const isMobile = useMediaQuery({ query: "(max-width: 450px)" })
   const isTablet = useMediaQuery({ query: "(max-width: 750px)" })
   const translate = useSelector(state => getTranslate(state.localize))
 
