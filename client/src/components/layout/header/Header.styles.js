@@ -3,10 +3,29 @@ import { colors, sizes } from "@styles/contants"
 
 export const HeaderWrapper = styled.header`
   position: fixed;
+  top: 0;
   z-index: 2;
   width: 100%;
   background-color: ${colors.black};
   border-bottom: 1px solid ${colors.black2};
+  @media only screen and (max-width: 750px) {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    top: unset;
+    height: 50px;
+    width: calc(100% - 30px);
+    &:first-of-type {
+      padding: 0 15px;
+    }
+    & svg {
+      height: 30px;
+    }
+  }
+  @media only screen and (max-width: 450px) {
+    top: unset;
+    bottom: 0;
+  }
 `
 export const HeaderContainer = styled.div`
   position: relative;
@@ -25,7 +44,7 @@ export const HeaderNav = styled.nav`
 export const HeaderLogo = styled.a`
   position: absolute;
   left: 0;
-  & svg:first-child {
+  & svg {
     height: 60px;
   }
 `
@@ -61,5 +80,47 @@ export const HeaderSpan = styled.span`
 
   &:first-child:after {
     content: " | ";
+  }
+`
+
+// MOBILE STYLING
+export const HeaderMenu = styled.div`
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  z-index: 3;
+  top: 0;
+  visibility: ${p => (p.toggle ? "visible" : "hidden")};
+  right: ${p => (p.toggle ? 0 : "-220px")};
+  width: 220px;
+  height: 100%;
+  background-color: ${colors.darkGrey};
+  transition: all 0.3s ease;
+  nav {
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    a {
+      margin-right: 15px;
+      margin-top: 30px;
+    }
+  }
+  button {
+    margin-top: 30px;
+    margin-right: 15px;
+    margin-bottom: 100px;
+    width: 100px;
+  }
+  i {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+  }
+  div {
+    position: absolute;
+    right: 15px;
+    bottom: 65px;
   }
 `
