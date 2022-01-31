@@ -30,7 +30,7 @@ const Main = () => {
         <p>{translate("main.about.description")}</p>
       </MainAboutWrapper>
       <MainServices>
-        <Title text="SERVICIOS" />
+        <Title text={translate("main.services.title")} />
         <MainServicesList>{renderServices()}</MainServicesList>
       </MainServices>
     </main>
