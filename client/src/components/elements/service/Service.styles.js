@@ -8,7 +8,7 @@ export const ServiceStyle = styled.div`
   border-bottom: 1px solid ${colors.black2};
   overflow: hidden;
   filter: saturate(0);
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
   img {
     width: 100%;
     height: 100%;
@@ -27,13 +27,18 @@ export const ServiceStyle = styled.div`
     z-index: 2;
     text-transform: uppercase;
     color: ${colors.white};
+    transition: all 0.5s ease;
   }
   &:hover {
     filter: saturate(1);
+    img {
+      transform: scale(1.5);
+    }
+    h3 {
+      color: ${colors.green};
+    }
   }
-  &:hover img {
-    transform: scale(1.5);
-  }
+
   @media only screen and (max-width: 750px) {
     h3 {
       font-size: ${sizes.medium};
