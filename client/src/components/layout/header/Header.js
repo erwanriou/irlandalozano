@@ -51,7 +51,7 @@ const Header = ({ languages, setActiveLanguage }) => {
   const renderLinks = () =>
     links.map((link, i) => (
       <HeaderLink key={i} href={link.href} onClick={handleCloseMenu}>
-        {translate(`header.nav.${i + 1}`)}
+        {translate(link.translation)}
       </HeaderLink>
     ))
 

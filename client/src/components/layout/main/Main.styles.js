@@ -11,6 +11,7 @@ export const MainAboutWrapper = styled.div`
     text-align: center;
     text-transform: uppercase;
     font-weight: 500;
+    font-size: ${sizes.large};
   }
   p {
     font-family: "Montserrat", sans-serif;
@@ -20,4 +21,18 @@ export const MainAboutWrapper = styled.div`
     line-height: 1.8;
     font-weight: 300;
   }
+`
+export const MainServices = styled.div`
+  position: relative;
+  background-color: ${colors.black};
+`
+export const MainServicesList = styled.div`
+  position: relative;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  border-left: 1px solid ${colors.black2};
 `
