@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { colors, sizes } from "@styles/contants"
+import { colors, sizes } from "@styles/constants"
 
 export const MainAboutWrapper = styled.div`
   position: relative;
@@ -35,4 +35,20 @@ export const MainServicesList = styled.div`
   justify-content: flex-start;
   flex-wrap: wrap;
   border-left: 1px solid ${colors.black2};
+`
+
+export const MainProjects = styled.div`
+  position: relative;
+  background-color: ${colors.white};
+`
+
+export const MainProjectList = styled.div`
+  position: relative;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 50px 0;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
 `

@@ -3,11 +3,31 @@
   "header.nav.2": "TIPOS DE PROYECTOS",
   "header.nav.3": "CLIENTES",
   "header.button": "CONTACTO",
+
   "main.about.title": "NOSOTROS",
   "main.about.description": "Somos expertos en producción de eventos y experiencias de marca con alcance internacional. Generar ideas y llevarlas a la realidad es lo nuestro. La ambigüedad no nos incomoda, pues explorar posibilidades e identificar la mejor solución nos apasiona. Con base en LATAM, trabajamos en diferentes zonas horarias y culturas. #ProductionWithoutBorders",
+
   "main.services.title": "SERVICIOS",
   "main.services.1": "creatividad",
   "main.services.2": "contenido",
   "main.services.3": "producción",
-  "main.services.4": "management"
+  "main.services.4": "management",
+
+  "main.projects.title": "TIPOS DE PROYECTOS",
+  "main.projects.title.1": "Eventos virtuales",
+  "main.projects.title.2": "Eventos híbridos",
+  "main.projects.title.3": "Eventos presenciales",
+  "main.projects.title.4": "Food & wine experience",
+  "main.projects.title.5": "Deportes",
+  "main.projects.title.6": "Activaciones BTL",
+  "main.projects.title.7": "Logística y meeting planner",
+  "main.projects.title.8": "Contamos historias",
+  "main.projects.description.1": "Diseño y producción virtual con conectividad global.",
+  "main.projects.description.2": "Proyectos presenciales con interacción virtual.",
+  "main.projects.description.3": "Planeación y producción integral para hacer de tu evento una experiencia completa.",
+  "main.projects.description.4": "Reunimos a los mejores chefs y bartenders para deleitar el paladar de tus invitados.",
+  "main.projects.description.5": "Actividades, torneos y patrocinios para fortalecer las relaciones con tus clientes.",
+  "main.projects.description.6": "Creamos experiencias para conectar con tu audiencia B2B.",
+  "main.projects.description.7": "Disfruta de tu evento, nosotros nos ocupamos de la logística.",
+  "main.projects.description.8": "Creamos todo tipo de contenido para contar lo mejor de tu marca."
 }

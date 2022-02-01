@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { colors, sizes } from "@styles/contants"
+import { colors, sizes } from "@styles/constants"
 
 export const ServiceStyle = styled.div`
   position: relative;

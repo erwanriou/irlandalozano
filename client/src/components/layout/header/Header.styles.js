@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { colors, sizes } from "@styles/contants"
+import { colors, sizes } from "@styles/constants"
 
 export const HeaderWrapper = styled.header`
   position: fixed;
@@ -42,6 +42,8 @@ export const HeaderNav = styled.nav`
 
 export const HeaderLogo = styled.a`
   position: absolute;
+  cursor: pointer;
+
   left: 0;
   & svg {
     height: 60px;
@@ -50,6 +52,7 @@ export const HeaderLogo = styled.a`
 
 export const HeaderLink = styled.a`
   position: relative;
+  cursor: pointer;
   color: ${colors.white};
   text-decoration: none;
   margin-right: 30px;

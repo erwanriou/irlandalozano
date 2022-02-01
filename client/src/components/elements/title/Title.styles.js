@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { colors, sizes } from "@styles/contants"
+import { colors, sizes } from "@styles/constants"
 
 export const TitleStyle = styled.h2`
   position: relative;
@@ -9,8 +9,8 @@ export const TitleStyle = styled.h2`
   font-family: "Montserrat", sans-serif;
   text-align: center;
   padding: 40px 0;
-  background-color: ${colors.black};
-  color: ${colors.white};
+  background-color: ${p => p.backgroundColor};
+  color: ${p => p.color};
   font-size: ${sizes.large};
-  border-bottom: 1px solid ${colors.black2};
+  border-bottom: 1px solid ${p => p.borderColor};
 `

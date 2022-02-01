@@ -1,13 +1,19 @@
 import React from "react"
 import PropTypes from "prop-types"
+
 // IMPORT STYLING
 import { IconStyle } from "./Icon.styles"
-import { colors, sizes } from "@styles/contants"
+import { colors, sizes } from "@styles/constants"
+
+// IMPORT COLLECTION
+import { iconsCollection } from "./Icon.collection"
 
 const Icon = ({ icon, size, color, onClick }) => {
+  const IconSVG = iconsCollection[icon]
+
   return (
     <IconStyle size={size} color={color} onClick={onClick}>
-      {icon}
+      {iconsCollection[icon] ? <IconSVG color={color} /> : icon}
     </IconStyle>
   )
 }

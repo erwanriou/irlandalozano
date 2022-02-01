@@ -7,7 +7,7 @@ import { getTranslate } from "r1-localize"
 
 // IMPORT STYLING
 import { HeaderWrapper, HeaderContainer, HeaderMenu, HeaderLogo, HeaderNav, HeaderLink, HeaderLanguages, HeaderSpan } from "./Header.styles"
-import { colors, sizes } from "@styles/contants"
+import { colors, sizes } from "@styles/constants"
 
 // IMPORT COMPONENTS
 import Logo from "@components/elements/logo/Logo"
@@ -35,6 +35,11 @@ const Header = ({ languages, setActiveLanguage }) => {
   // HANDLE FUNCTIONS
   const handleMenu = () => setToggle(!toggle)
   const handleCloseMenu = () => setToggle(false)
+  const handleScrolling = (e, href) => {
+    e.preventDefault()
+    const element = document.getElementById(href)
+    element && element.scrollIntoView({ behavior: "smooth", block: "start" })
+  }
   const handleClickOutside = e => {
     if (!node.current.contains(e.target)) return setToggle(false)
     return
@@ -50,7 +55,13 @@ const Header = ({ languages, setActiveLanguage }) => {
 
   const renderLinks = () =>
     links.map((link, i) => (
-      <HeaderLink key={i} href={link.href} onClick={handleCloseMenu}>
+      <HeaderLink
+        key={i}
+        onClick={e => {
+          handleCloseMenu()
+          handleScrolling(e, link.href)
+        }}
+      >
         {translate(link.translation)}
       </HeaderLink>
     ))
@@ -69,7 +80,7 @@ const Header = ({ languages, setActiveLanguage }) => {
   const renderDesktopMenu = () => {
     return (
       <HeaderContainer>
-        <HeaderLogo href="/">
+        <HeaderLogo onClick={e => handleScrolling(e, "home")}>
           <Logo />
         </HeaderLogo>
         {renderMenuContent()}
