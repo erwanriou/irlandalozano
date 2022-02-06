@@ -4,12 +4,14 @@ export const colors = {
   darkGrey: "#171717",
   lightGrey: "#ddd",
   white: "#fff",
-  green: "#02ff00"
+  green: "#02ff00",
+  whiteTransparent1: "#ffffff5e"
 }
 
 export const sizes = {
   micro: "10px",
   small: "12px",
   medium: "16px",
-  large: "24px"
+  large: "24px",
+  xLarge: "48px"
 }

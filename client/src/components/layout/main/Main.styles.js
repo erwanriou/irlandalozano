@@ -40,6 +40,7 @@ export const MainServicesList = styled.div`
 export const MainProjects = styled.div`
   position: relative;
   background-color: ${colors.white};
+  border-bottom: 1px solid ${colors.lightGrey};
 `
 
 export const MainProjectList = styled.div`
@@ -51,4 +52,20 @@ export const MainProjectList = styled.div`
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
+`
+
+export const MainClients = styled.div`
+  position: relative;
+  background-color: ${colors.black};
+`
+
+export const MainClientList = styled.div`
+  position: relative;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  border-left: 1px solid ${colors.black2};
 `

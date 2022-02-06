@@ -24,7 +24,7 @@ const Header = ({ languages, setActiveLanguage }) => {
   const isTablet = useMediaQuery({ query: "(max-width: 750px)" })
   const translate = useSelector(state => getTranslate(state.localize))
 
-  // USEEFFECTS
+  // LIFECYCLE
   useEffect(() => {
     toggle && document.addEventListener("mousedown", handleClickOutside, false)
     return () => {
@@ -91,11 +91,9 @@ const Header = ({ languages, setActiveLanguage }) => {
   const renderMobileMenu = () => {
     return (
       <>
-        {
-          <HeaderMenu ref={node} toggle={toggle}>
-            {renderMenuContent()}
-          </HeaderMenu>
-        }
+        <HeaderMenu ref={node} toggle={toggle}>
+          {renderMenuContent()}
+        </HeaderMenu>
         <Icon onClick={handleMenu} color={colors.white} size={sizes.large} />
       </>
     )
