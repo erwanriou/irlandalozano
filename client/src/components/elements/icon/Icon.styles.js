@@ -12,4 +12,8 @@ export const IconStyle = styled.i`
   font-size: ${p => p.size};
   width: ${p => p.size};
   height: ${p => p.size};
+  svg {
+    width: 100%;
+    height: 100%;
+  }
 `
