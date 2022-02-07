@@ -70,7 +70,13 @@ const Header = ({ languages, setActiveLanguage }) => {
     return (
       <>
         <HeaderNav>{renderLinks()}</HeaderNav>
-        <Button onClick={handleCloseMenu} text={translate("header.button")} />
+        <Button
+          onClick={e => {
+            handleCloseMenu()
+            handleScrolling(e, "contact")
+          }}
+          text={translate("header.button")}
+        />
         <HeaderLanguages>{renderLanguages()}</HeaderLanguages>
         {toggle && <Icon onClick={handleMenu} icon="close" color={colors.white} size={sizes.large} />}
       </>

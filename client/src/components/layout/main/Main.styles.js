@@ -69,3 +69,8 @@ export const MainClientList = styled.div`
   flex-wrap: wrap;
   border-left: 1px solid ${colors.black2};
 `
+
+export const MainContact = styled.div`
+  position: relative;
+  background-color: ${colors.white};
+`

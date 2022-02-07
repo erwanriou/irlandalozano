@@ -1,4 +1,4 @@
-import { Project1, Project2, Project3, Project4, Project5, Project6, Project7, Project8 } from "@data/icons"
+import { Project1, Project2, Project3, Project4, Project5, Project6, Project7, Project8, Mail, Instagram } from "@data/icons"
 
 export const iconsCollection = {
   project1: Project1,
@@ -8,5 +8,7 @@ export const iconsCollection = {
   project5: Project5,
   project6: Project6,
   project7: Project7,
-  project8: Project8
+  project8: Project8,
+  mail: Mail,
+  instagram: Instagram
 }

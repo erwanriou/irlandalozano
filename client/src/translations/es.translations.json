@@ -32,5 +32,12 @@
   "main.projects.description.8": "Creamos todo tipo de contenido para contar lo mejor de tu marca.",
 
   "main.clients.title": "CLIENTES",
-  "main.clients.subtitle": "PRODUCCIÓN INTEGRAL"
+  "main.clients.subtitle": "PRODUCCIÓN INTEGRAL",
+
+  "main.contact.title": "CONTACTO",
+  "main.contact.adress.1": "DIRECCIÓN",
+  "main.contact.adress.2": "PASEO DE LA REFORMA 333-001, COL. CUAUHTÉMOC, CUIDAD DE MÉXICO",
+
+  "footer.content": "Copyright ${date}, -IL59 Producciones SAS de CV  | Todos los derechos reservados",
+  "footer.privacy": "Política de privacidad"
 }

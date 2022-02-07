@@ -5,7 +5,16 @@ import { useSelector } from "react-redux"
 import { getTranslate } from "r1-localize"
 
 // IMPORT STYLING
-import { MainAboutWrapper, MainServices, MainServicesList, MainProjects, MainProjectList, MainClients, MainClientList } from "./Main.styles"
+import {
+  MainAboutWrapper,
+  MainServices,
+  MainServicesList,
+  MainProjects,
+  MainProjectList,
+  MainClients,
+  MainClientList,
+  MainContact
+} from "./Main.styles"
 import { colors } from "@styles/constants"
 
 // IMPORT COMPONENTS
@@ -13,6 +22,8 @@ import Title from "@components/elements/title/Title"
 import Service from "@components/elements/service/Service"
 import Project from "@components/elements/project/Project"
 import Client from "@components/elements/client/Client"
+import Iframe from "@components/elements/iframe/Iframe"
+import Contact from "@components/elements/contact/Contact"
 
 // IMPORT DATA
 import { services } from "@data/services"
@@ -48,7 +59,12 @@ const Main = () => {
         <Title text={translate("main.clients.title")} color={colors.black} borderColor={colors.lightGrey} backgroundColor={colors.white} />
         <Title text={translate("main.clients.subtitle")} color={colors.white} borderColor={colors.black2} backgroundColor={colors.black} />
         <MainClientList>{renderClients()}</MainClientList>
+        <Iframe src={`https://www.youtube.com/embed/l11a_S7tZTg`} />
       </MainClients>
+      <MainContact id="contact">
+        <Title text={translate("main.contact.title")} color={colors.black} borderColor={colors.lightGrey} backgroundColor={colors.white} />
+        <Contact translate={translate} />
+      </MainContact>
     </main>
   )
 }

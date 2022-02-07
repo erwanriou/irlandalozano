@@ -42,7 +42,7 @@ const Client = ({ image, isVideo, video, i }) => {
         <ClientModal>
           <div ref={node}>
             <Icon icon="close" onClick={handleClose} />
-            <video autoPlay loop muted src={video}></video>
+            <video autoPlay loop muted controls src={video}></video>
           </div>
         </ClientModal>
       )}
