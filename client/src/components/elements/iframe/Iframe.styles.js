@@ -8,10 +8,12 @@ export const IframeStyle = styled.div`
   max-width: 1200px;
   margin: 0 auto;
   position: relative;
+  background-color: ${colors.black};
+  padding: 100px 0;
   height: 0;
   iframe {
     left: 0;
-    top: 0;
+    top: 100px;
     width: 100%;
     position: absolute;
   }
