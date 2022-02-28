@@ -6,19 +6,22 @@ export const IframeStyle = styled.div`
   min-height: 687px;
   overflow: hidden;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 100px auto;
+  padding-bottom: 100px;
   position: relative;
   background-color: ${colors.black};
-  padding: 100px 0;
   height: 0;
   iframe {
     left: 0;
-    top: 100px;
+    top: 0;
     width: 100%;
     position: absolute;
   }
   @media only screen and (max-width: 450px) {
     min-height: 300px;
+    margin: 0 auto;
+    padding-bottom: 0;
+
     iframe {
       height: 100%;
     }
