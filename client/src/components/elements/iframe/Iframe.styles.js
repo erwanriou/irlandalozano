@@ -6,7 +6,7 @@ export const IframeStyle = styled.div`
   min-height: 687px;
   overflow: hidden;
   max-width: 1200px;
-  margin: 100px auto;
+  margin: 100px auto 0 auto;
   padding-bottom: 100px;
   position: relative;
   background-color: ${colors.black};

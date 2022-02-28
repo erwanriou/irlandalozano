@@ -37,9 +37,8 @@ export const clients = [
     image: clientBuilder("Client/CLIENTE_7/Cliente_7_SMaYmLKdBM.jpg")
   },
   {
-    isVideo: true,
-    video: imageBuilder("Client/CLIENTE_8/Cliente_8_Cw1-NRXTZSb.mp4"),
-    image: clientBuilder("Client/CLIENTE_8/Cliente_8_I71ozDbweY1.jpg")
+    isVideo: false,
+    image: clientBuilder("Client/CLIENTE_8/Cliente_8.jpg")
   },
   {
     isVideo: true,
@@ -48,8 +47,8 @@ export const clients = [
   },
   {
     isVideo: true,
-    video: imageBuilder("Client/CLIENTE_10/Cliente_10_kY6A_vAeQUD.mp4"),
-    image: clientBuilder("Client/CLIENTE_10/Cliente_10_H-qA3AIwC8k.jpg")
+    video: imageBuilder("Client/CLIENTE_10/Cliente_10.mp4"),
+    image: clientBuilder("Client/CLIENTE_10/Cliente_10.jpg")
   },
   {
     isVideo: false,
