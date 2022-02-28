@@ -5,7 +5,7 @@
   "header.button": "CONTACT",
 
   "main.about.title": "WHO ARE WE?",
-  "main.about.description": "We are experts in event production and brand experience with an international scope. Coming up with ideas and transforming them into reality is our thing. Ambiguity doesn't bother us because exploring possibilities and identifying the best solution is our passion. Based in LATAM, we work across time zones and cultures. #ProductionWithoutBorders",
+  "main.about.description": "We are experts in event production and brand experience with international scope. Coming up with ideas and transforming them into reality is our thing. Ambiguity doesn't bother us because exploring possibilities and identifying the best solution is our passion. Based in LATAM, we work across different time zones and cultures. #ProductionWithoutBorders",
 
   "main.services.title": "SERVICES",
   "main.services.1": "creativity",
@@ -20,14 +20,14 @@
   "main.projects.title.4": "Food and wine experience",
   "main.projects.title.5": "Sports",
   "main.projects.title.6": "BTL activations",
-  "main.projects.title.7": "Logistics and meeting planner.",
+  "main.projects.title.7": "Logistics and meeting planner",
   "main.projects.title.8": "We tell stories",
   "main.projects.description.1": "Virtual design and production with global connectivity.",
   "main.projects.description.2": "Face-to-face projects with virtual interaction.",
   "main.projects.description.3": "Planning and production to turn your event into a complete experience.",
   "main.projects.description.4": "We bring together the best chefs and bartenders to delight the palate of your guests.",
   "main.projects.description.5": "Activities, tournaments, and sponsorships to strengthen relationships with your clients.",
-  "main.projects.description.6": "We create experiences to connect with your B2B audience.",
+  "main.projects.description.6": "We create experiences to connect with your audience.",
   "main.projects.description.7": "Enjoy your event. We take care of the logistics.",
   "main.projects.description.8": "We create all kind of content to tell the best of your brand.",
 
@@ -36,8 +36,8 @@
 
   "main.contact.title": "CONTACT",
   "main.contact.adress.1": "ADDRESS",
-  "main.contact.adress.2": "PASEO DE LA REFORMA 333-001, COL. CUAUHTÉMOC, CUIDAD DE MÉXICO",
+  "main.contact.adress.2": "333-001 PASEO DE LA REFORMA, CUAUHTÉMOC, MEXICO CITY",
 
-  "footer.content": "Copyright ${date}, -IL59 Producciones SAS de CV | All right reserved",
+  "footer.content": "Copyright ${date}, IL59 Producciones SAS de CV | All right reserved",
   "footer.privacy": "Privacy policy"
 }

@@ -10,13 +10,14 @@ export const ContactStyle = styled.div`
   flex-direction: column;
   margin: 0 auto;
   text-align: center;
-  padding: 50px;
+  padding: 25px;
   h3 {
     font-family: "Montserrat", sans-serif;
     text-transform: uppercase;
     line-height: 1.5;
     font-size: ${sizes.medium};
-    padding-bottom: 15px;
+    padding-top: 25px;
+    padding-bottom: 25px;
   }
   p {
     font-family: "Montserrat", sans-serif;
@@ -30,7 +31,7 @@ export const ContactStyle = styled.div`
 export const ContactIcons = styled.div`
   position: relative;
   display: flex;
-  padding: 50px 0;
+  padding-bottom: 25px;
   i {
     position: relative;
     cursor: pointer;

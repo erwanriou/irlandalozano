@@ -28,9 +28,9 @@ const Contact = ({ translate }) => {
   // MAIN RENDER
   return (
     <ContactStyle>
+      {renderIcons()}
       <h3>{translate("main.contact.adress.1")}</h3>
       <p>{translate("main.contact.adress.2")}</p>
-      {renderIcons()}
     </ContactStyle>
   )
 }

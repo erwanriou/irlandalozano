@@ -3,21 +3,29 @@ import { colors, sizes } from "@styles/constants"
 
 export const BannerWrapper = styled.section`
   position: relative;
+  display: flex;
+  justify-content: center;
   background-color: ${colors.black};
   width: 100%;
-  max-height: 750px;
+  min-height: 500px;
   overflow: hidden;
-  video {
+  svg {
     position: relative;
-    width: 100%;
+    width: 25%;
   }
   @media only screen and (max-width: 1000px) {
-    margin-top: 70px;
+    min-height: 300px;
+    margin-top: 25px;
   }
   @media only screen and (max-width: 750px) {
+    min-height: 200px;
     margin-top: 50px;
   }
   @media only screen and (max-width: 450px) {
     margin-top: 0;
+    svg {
+      position: relative;
+      width: 50%;
+    }
   }
 `

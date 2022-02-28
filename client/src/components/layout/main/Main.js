@@ -62,7 +62,13 @@ const Main = () => {
         <Iframe src={`https://www.youtube.com/embed/l11a_S7tZTg`} />
       </MainClients>
       <MainContact id="contact">
-        <Title text={translate("main.contact.title")} color={colors.black} borderColor={colors.lightGrey} backgroundColor={colors.white} />
+        <Title
+          text={translate("main.contact.title")}
+          color={colors.black}
+          borderColor={colors.lightGrey}
+          backgroundColor={colors.white}
+          isLine={false}
+        />
         <Contact translate={translate} />
       </MainContact>
     </main>

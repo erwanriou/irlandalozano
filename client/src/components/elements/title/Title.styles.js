@@ -12,5 +12,5 @@ export const TitleStyle = styled.h2`
   background-color: ${p => p.backgroundColor};
   color: ${p => p.color};
   font-size: ${sizes.large};
-  border-bottom: 1px solid ${p => p.borderColor};
+  border-bottom: ${p => (p.isLine ? "1px" : "0")} solid ${p => p.borderColor};
 `

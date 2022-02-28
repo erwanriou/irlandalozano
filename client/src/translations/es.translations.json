@@ -27,7 +27,7 @@
   "main.projects.description.3": "Planeación y producción integral para hacer de tu evento una experiencia completa.",
   "main.projects.description.4": "Reunimos a los mejores chefs y bartenders para deleitar el paladar de tus invitados.",
   "main.projects.description.5": "Actividades, torneos y patrocinios para fortalecer las relaciones con tus clientes.",
-  "main.projects.description.6": "Creamos experiencias para conectar con tu audiencia B2B.",
+  "main.projects.description.6": "Creamos experiencias para conectar con tu audiencia.",
   "main.projects.description.7": "Disfruta de tu evento, nosotros nos ocupamos de la logística.",
   "main.projects.description.8": "Creamos todo tipo de contenido para contar lo mejor de tu marca.",
 
@@ -36,8 +36,8 @@
 
   "main.contact.title": "CONTACTO",
   "main.contact.adress.1": "DIRECCIÓN",
-  "main.contact.adress.2": "PASEO DE LA REFORMA 333-001, COL. CUAUHTÉMOC, CUIDAD DE MÉXICO",
+  "main.contact.adress.2": "PASEO DE LA REFORMA 333-001, COL. CUAUHTÉMOC, CIUDAD DE MÉXICO",
 
-  "footer.content": "Copyright ${date}, -IL59 Producciones SAS de CV  | Todos los derechos reservados",
+  "footer.content": "Copyright ${date}, IL59 Producciones SAS de CV  | Todos los derechos reservados",
   "footer.privacy": "Política de privacidad"
 }

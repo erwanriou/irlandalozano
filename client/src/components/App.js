@@ -25,7 +25,7 @@ const App = ({ languages, setActiveLanguage, addTranslationForLanguage }) => {
       <Header languages={languages} setActiveLanguage={setActiveLanguage} />
       <Banner />
       <Main />
-      <Footer />
+      <Footer languages={languages} />
     </>
   )
 }
