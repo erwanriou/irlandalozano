@@ -26,6 +26,7 @@ export const MainServices = styled.div`
   position: relative;
   background-color: ${colors.black};
 `
+
 export const MainServicesList = styled.div`
   position: relative;
   max-width: 1200px;
