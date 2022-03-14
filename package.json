@@ -4,6 +4,7 @@
   "description": "ppayaz website",
   "main": "index.js",
   "scripts": {
+    "commit": "bash scripts/commit.sh",
     "start": "node index.js",
     "start:server": "nodemon index.js",
     "start:client": "npm start --prefix client",

@@ -1,25 +1,77 @@
 import React from "react"
 
-//IMPORT COMPONENTS
-import Logo from "../../elements/logo/Logo"
-import Social from "../../elements/social/Social"
+// REDUX
+import { useSelector } from "react-redux"
+import { getTranslate } from "r1-localize"
 
-//IMPORT STYLES
-import { MainBackground, MainContainer, Text, Copyright } from "./Main.styles"
+// IMPORT STYLING
+import {
+  MainAboutWrapper,
+  MainServices,
+  MainServicesList,
+  MainProjects,
+  MainProjectList,
+  MainClients,
+  MainClientList,
+  MainContact
+} from "./Main.styles"
+import { colors } from "@styles/constants"
+
+// IMPORT COMPONENTS
+import Title from "@components/elements/title/Title"
+import Service from "@components/elements/service/Service"
+import Project from "@components/elements/project/Project"
+import Client from "@components/elements/client/Client"
+import Iframe from "@components/elements/iframe/Iframe"
+import Contact from "@components/elements/contact/Contact"
+
+// IMPORT DATA
+import { services } from "@data/services"
+import { projects } from "@data/projects"
+import { clients } from "@data/clients"
 
 const Main = () => {
+  // HOOKS
+  const translate = useSelector(state => getTranslate(state.localize))
+
+  // RENDER FUNCTIONS
+  const renderServices = () => services?.map((s, i) => <Service key={i} title={translate(s.translation)} img={s.href} />) ?? []
+  const renderClients = () => clients?.map((c, i) => <Client key={i} image={c.image} isVideo={c.isVideo} video={c.video} i={i} />) ?? []
+  const renderProjects = () =>
+    projects?.map((s, i) => <Project key={i} title={translate(s.title)} icon={s.icon} description={translate(s.description)} />) ?? []
+
+  // MAIN RENDER
   return (
-    <MainContainer>
-      <MainBackground />
-      <Logo />
-      <Text>
-        <p>COMING SOON</p>
-      </Text>
-      <Social />
-      <Copyright>
-        <p>Copyright 2021 Irlanda Lozano Studio © | Todos los derechos reservados</p>
-      </Copyright>
-    </MainContainer>
+    <main>
+      <MainAboutWrapper id="about">
+        <h2>{translate("main.about.title")}</h2>
+        <p>{translate("main.about.description")}</p>
+      </MainAboutWrapper>
+      <MainServices id="services">
+        <Title text={translate("main.services.title")} />
+        <MainServicesList>{renderServices()}</MainServicesList>
+      </MainServices>
+      <MainProjects id="projects">
+        <Title text={translate("main.projects.title")} color={colors.black} borderColor={colors.lightGrey} backgroundColor={colors.white} />
+        <MainProjectList>{renderProjects()}</MainProjectList>
+      </MainProjects>
+      <MainClients id="clients">
+        <Title text={translate("main.clients.title")} color={colors.black} borderColor={colors.lightGrey} backgroundColor={colors.white} />
+        <Title text={translate("main.clients.subtitle")} color={colors.white} borderColor={colors.black2} backgroundColor={colors.black} />
+        <MainClientList>{renderClients()}</MainClientList>
+        <Iframe src={`https://www.youtube.com/embed/l11a_S7tZTg`} />
+      </MainClients>
+      <MainContact id="contact">
+        <Title
+          text={translate("main.contact.title")}
+          color={colors.black}
+          borderColor={colors.lightGrey}
+          backgroundColor={colors.white}
+          isLine={false}
+        />
+        <Contact translate={translate} />
+      </MainContact>
+    </main>
   )
 }
 

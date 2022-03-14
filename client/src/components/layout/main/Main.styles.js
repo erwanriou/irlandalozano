@@ -1,53 +1,77 @@
 import styled from "styled-components"
+import { colors, sizes } from "@styles/constants"
 
-export const MainContainer = styled.main`
+export const MainAboutWrapper = styled.div`
   position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
+  max-width: 1200px;
+  margin: 0 auto;
+  h2 {
+    font-family: "Montserrat", sans-serif;
+    margin-top: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: ${sizes.large};
+  }
+  p {
+    font-family: "Montserrat", sans-serif;
+    margin: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1.8;
+    font-weight: 300;
+  }
 `
-export const MainBackground = styled.div`
-  position: absolute;
-  background-color: black;
-  width: 100%;
-  height: 100%;
+export const MainServices = styled.div`
+  position: relative;
+  background-color: ${colors.black};
 `
 
-export const Text = styled.div`
-  position: absolute;
-  display: flex;
-  justify-content: center;
+export const MainServicesList = styled.div`
+  position: relative;
+  max-width: 1200px;
   width: 100%;
-  font-size: 50px;
-  color: white;
-  font-family: montserrat;
-  font-weight: bold;
-  letter-spacing: 5px;
-  p {
-    text-align: center;
-  }
-  @media only screen and (max-width: 1000px) {
-    font-size: 25px;
-  }
-`
-export const Copyright = styled.div`
-  position: absolute;
-  bottom: 30px;
+  margin: 0 auto;
   display: flex;
-  justify-content: center;
-  font-size: 8px;
-  color: white;
-  font-family: montserrat;
-  font-weight: normal;
-  p {
-    text-align: center;
-  }
-  @media only screen and (max-width: 1000px) {
-    width: calc(100% - 30px);
-    line-height: 1.5;
-  }
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  border-left: 1px solid ${colors.black2};
+`
+
+export const MainProjects = styled.div`
+  position: relative;
+  background-color: ${colors.white};
+  border-bottom: 1px solid ${colors.lightGrey};
+`
+
+export const MainProjectList = styled.div`
+  position: relative;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 50px 0;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+`
+
+export const MainClients = styled.div`
+  position: relative;
+  background-color: ${colors.black};
+`
+
+export const MainClientList = styled.div`
+  position: relative;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  border-left: 1px solid ${colors.black2};
+`
+
+export const MainContact = styled.div`
+  position: relative;
+  background-color: ${colors.white};
 `
