@@ -19,7 +19,7 @@ const Footer = ({ languages }) => {
     <FooterStyle>
       <span>
         {translate("footer.content", { date: new Date().getFullYear() })} |{" "}
-        <a href={imageBuilder(language === "en" ? "privacy-policy-en_Dy43YMDIJ.pdf" : "privacy-policy_HAqzmk2Gq.pdf")} target="_blank">
+        <a href={imageBuilder(language === "en" ? "Aviso_de_Privacidad.pdf" : "Aviso_de_Privacidad_ingles.pdf")} target="_blank">
           {translate("footer.privacy")}
         </a>
       </span>

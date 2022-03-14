@@ -5,7 +5,7 @@ export const clients = [
   {
     isVideo: true,
     video: imageBuilder("Client/CLIENTE_1/Cliente_1_9RBbK1pcVjD.mp4"),
-    image: clientBuilder("Client/CLIENTE_1/Cliente_1_6CpSRlGBAIk.jpg")
+    image: clientBuilder("Client/CLIENTE_1/Cliente_1.jpg")
   },
   {
     isVideo: false,
