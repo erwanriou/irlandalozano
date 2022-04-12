@@ -48,6 +48,8 @@ export const ClientModal = styled.div`
     overflow: hidden;
   }
   video {
+    position: relative;
+    z-index: 1;
     max-width: 1200px;
     max-height: 600px;
     box-shadow: rgb(0 0 0 / 20%) 1px 1px 3px 0;
