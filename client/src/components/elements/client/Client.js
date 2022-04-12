@@ -18,15 +18,11 @@ const Client = ({ image, isVideo, video, i }) => {
 
   // RENDER FUNCTION
   const renderPreview = () =>
-    hover && video ? (
-      <ClientPreview onClick={() => handleToggle(video)} autoPlay loop muted src={video}></ClientPreview>
-    ) : (
-      <img src={image} alt={`client preview ${i}`} />
-    )
+    hover && video ? <ClientPreview autoPlay loop muted src={video}></ClientPreview> : <img src={image} alt={`client preview ${i}`} />
 
   // MAIN RENDER
   return (
-    <ClientStyle onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)}>
+    <ClientStyle onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)} onClick={() => handleToggle(video)}>
       {isVideo && <Icon icon="play_arrow" size={sizes.large} />}
       {renderPreview()}
       {modal.toggle && (
